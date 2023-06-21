@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const path = require('path');
 require('dotenv').config({path: '/home/ec2-user/game-center-api/.bashrc'})
+//require('dotenv').config()
 
 
 const routes = require('./routes');
