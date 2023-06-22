@@ -19,8 +19,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const sslOptions = {
-  key: fs.readFileSync(path.join(__dirname, 'ssl', 'key.pem')),
-  cert: fs.readFileSync(path.join(__dirname, 'ssl', 'certificate.pem'))
+  key: fs.readFileSync(path.join(__dirname, 'SSL', 'key.pem')),
+  cert: fs.readFileSync(path.join(__dirname, 'SSL', 'certificate.pem'))
 };
 
 if (process.env.NODE_ENV === 'production') {
